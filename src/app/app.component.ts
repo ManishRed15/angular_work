@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { MainBodyComponent } from './main-body/main-body.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
+import { FormCheckComponent } from './form-check/form-check.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, MainBodyComponent, SideNavComponent ],
+  imports: [RouterOutlet, FormCheckComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
