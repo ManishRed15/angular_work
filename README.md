@@ -2,6 +2,19 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
 
+In this project, I used Angular Services to share data between two standalone components (FirstComponent and SecondComponent). The goal was to allow users to select a shape and color in one component and have the selection reflected in both components using a centralized service.
+
+1️⃣ Created a Service (ShapeService)
+I created a service (shape.service.ts) using BehaviorSubject from RxJS to store and update the selected shape and color.
+The service has two observables:
+selectedShape → Stores the selected shape.
+selectedColor → Stores the selected color.
+It provides methods updateShape(shape: string) and updateColor(color: string) to update the values.
+
+2️⃣ Injected the Service into Components
+In FirstComponent, the user selects a shape and color, which are updated using the service methods.
+In SecondComponent, I subscribed to the observables in the service to reactively receive updates whenever the shape or color changes.
+
 ## Development server
 
 To start a local development server, run:
