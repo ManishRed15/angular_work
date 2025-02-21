@@ -1,0 +1,16 @@
+<h2>First Component</h2>
+<label>Select Shape:</label>
+<select [(ngModel)]="shape">
+  <option *ngFor="let s of availableShapes">{{ s }}</option>
+</select>
+
+<label>Select Color:</label>
+<select [(ngModel)]="color">
+  <option *ngFor="let c of availableColors">{{ c }}</option>
+</select>
+
+<button (click)="updateSelection()">Draw</button>
+
+<div class="shape-container">
+  <div [ngClass]="shape" [style.background-color]="color"></div>
+</div>

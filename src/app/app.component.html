@@ -1,20 +1,6 @@
+<h1>Shape Drawer App</h1>
+
 <div class="container">
-    <!-- Left side: Numbers -->
-    <div class="numbers">
-      <div *ngFor="let num of numbers" [ngClass]="{ 'highlight': isHighlighted(num) }">
-        {{ num }}
-      </div>
-    </div>
-  
-    <!-- Right side: Buttons -->
-    <div class="buttons">
-      <button 
-        *ngFor="let filter of filters; let i = index" 
-        (click)="toggleFilter(i)"
-        [ngClass]="{ 'active': filter.active }">
-        {{ filter.label }}
-      </button>
-      <button class="clear" (click)="clearFilters()">Clear</button>
-    </div>
-  </div>
-  
+  <app-first></app-first>
+  <app-second></app-second>
+</div>

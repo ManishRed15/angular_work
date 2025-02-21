@@ -1,0 +1,29 @@
+.shape-container {
+    margin-top: 10px;
+  }
+  
+  /* Same shape styles as first component */
+  .Circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .Rectangle {
+    width: 150px;
+    height: 100px;
+  }
+  
+  .Square {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .Triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid;
+  }
+  
